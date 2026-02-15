@@ -61,6 +61,11 @@ faceless-shorts-mvp/
 └── requirements.txt
 ```
 
+## Docs
+
+- **`docs/BIBLE-OF-TERMS.md`** — Video production, temporal assembly, keyframe, and AI generative terminology for prompts and pipeline specs.
+- **`docs/SETUP-API-KEYS.md`** — API key setup.
+
 ## Compliance
 
 AI-generated content disclosure is included in the upload description template.
