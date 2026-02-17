@@ -3,7 +3,9 @@
 **Direct link (opens Credentials page):**  
 **https://console.cloud.google.com/apis/credentials**
 
----
+Go to https://console.cloud.google.com/apis/credentials, click "+ CREATE CREDENTIALS" → "OAuth client ID" → Desktop app, name it, create, and download the JSON.  
+Put that file in `faceless-shorts-mvp/config/client_secrets.json`.
+
 
 ## If the link opened in your browser, do this in order:
 
@@ -47,6 +49,18 @@
 - Left sidebar: **APIs & Services** → **Library**.
 - Search **"YouTube Data API v3"** → click it → **Enable** (if it says "Manage" it’s already on).
 - Go back to **Credentials** and finish step 6 if you hadn’t yet.
+
+### 8. Add yourself as Test user (required — or you get Error 403: access_denied)
+
+**New Google Auth Platform UI (wizard with ① ② ③ ④):**
+- Step ① App Information — fill App name, User support email. Click **Next** (no Save).
+- Step ② Audience — find **Test users**. Click **+ ADD USERS**. Enter your Gmail. Click **Add** or **Save** in the test-users popup. Click **Next**.
+- Step ③ Contact Information — fill if required. Click **Next**.
+- Step ④ Finish — click **Create** or **Save and Continue** to save the whole config.
+
+**Old UI (single page):**
+- Open: **https://console.cloud.google.com/apis/credentials/consent**
+- Scroll to **Test users** → **+ ADD USERS** → enter Gmail → **Save**.
 
 ---
 
